@@ -3,10 +3,10 @@ cartItems;
 
 localStorageKey;
 
-  constructor(localStorageKey) {
-    this.cart.localStorageKey=localStorageKey;
-    this.cart.loadFromStorage();
-  }
+constructor(localStorageKey) {
+  this.localStorageKey = localStorageKey;
+  this.loadFromStorage();
+}
 
 
 
@@ -90,5 +90,4 @@ const businessCart = new  Cart('cart-business');
 
 console.log(cart);
 console.log(businessCart);
-
 console.log(businessCart instanceof Cart);  
